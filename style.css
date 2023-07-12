@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background: #DAD8C9;
+}
+header{
+    background-color: #DAD8C9;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #154734;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 14%;
+    gap: 180px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.logo{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 50px;
+}
+.nav-item{
+    transition: 0.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-item:hover, .nav-item:hover a{
+    color:#fff;
+    background: #154734;
+    padding:0 20px;
+    border-radius: 4px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #261401;
+}
+/*font-family: 'Narnoor', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;*/
+
+
+
+
+
+/*navbar responsive*/
+@media (max-width: 769px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .logo{
+        padding: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transform: 0.3s;
+    }
+    .nav-item{
+        margin: 20px 0;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+}
