@@ -20,7 +20,7 @@ body{
     background: #081C15;
 }
 #firstpage{
-    height: 100vh;
+    height: max-content;
     background-image: url(images/network.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,6 @@ body{
 /*navbar css*/
 header{
     height: 80px;
-    /*background: #081C15;*/
 }
 li{
     list-style: none;
@@ -132,8 +131,59 @@ font-family: 'Playfair Display', serif;*/
 }
 
 
-
-
+/*project's page css*/
+#projects{
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.projects{
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: #A1B5AE;
+}
+.project-header{
+    text-align: center;
+}
+.project-header h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.project-body{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding:0 50px;
+}
+.projet{
+    width: 700px;
+    height: max-content;
+    background: #A1B5AE;
+    color: #081C15;
+    padding: 20px;
+    border-radius: 4px;
+    align-items: center;
+}
+.projet h3,.projet p, .git-link{
+    padding: 10px;
+    margin-left: 50%;
+}
+.git-link{
+    display: flex;
+    text-align: center;
+}
+.git-link i{
+    font-size: 1.3rem;
+    color: #081C15;
+}
+.git-link a:hover i{
+    font-size: 1.34rem;
+    color: #fff;
+}
 
 
 
