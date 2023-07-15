@@ -2,15 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fc5187318.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <div id="salutation"></div>
+    <section id="firstpage">
         <header>
             <nav class="navbar">
                 <a href="index.html" class="logo">LOGO</a>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
@@ -27,9 +29,19 @@
             <div class="presentation">
                 <p class="one">full stack developer</p>
                 <p class="two">network engineer</p>
+                <div class="contacts">
+                    <ul  class="socials">
+                        
+                        <li><a href="" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
-
+</section>
 
 
 <script>
@@ -44,6 +56,44 @@
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }));
+</script>
+<script>
+   window.addEventListener("load", function () {
+  const salutations = [
+    "Hello",
+    "Bonjour",
+    "Hola",
+    "Ciao",
+    "Konnichiwa",
+    "Namaste",
+    // Add more salutations as needed
+  ];
+
+  const salutationElement = document.getElementById("salutation");
+  const leadingSection = document.getElementById("firstpage");
+
+  function displaySalutations() {
+    leadingSection.style.display = "none"; // Hide the leading section initially
+
+    let index = 0;
+    const interval = setInterval(() => {
+      salutationElement.textContent = salutations[index];
+      index++;
+
+      if (index === salutations.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          salutationElement.style.display = "none";
+          leadingSection.style.display = "block"; // Show the leading section after salutations end
+        }, 200); 
+      }
+    }, 200); 
+  }
+
+  displaySalutations();
+});
+
+
 </script>
 </body>
 </html>
