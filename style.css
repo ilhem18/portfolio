@@ -103,7 +103,7 @@ font-family: 'Playfair Display', serif;*/
 }
 .presentation{
     float: right;
-    padding: 10%;
+    padding: 9%;
     display: flex;
     flex-direction: column;
     gap: .25rem;
