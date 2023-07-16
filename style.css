@@ -17,7 +17,7 @@
 }
 
 body{
-    background: #000;
+   background: #F2F0EB;
 }
 #firstpage{
     height: 100%;
@@ -28,12 +28,13 @@ body{
 /*navbar css*/
 header{
     height: 80px;
+    background: #F2F0EB;
 }
 li{
     list-style: none;
 }
 a{
-    color: #A1B5AE;
+    color: #081C15;
     text-decoration: none;
 }
 .navbar{
@@ -61,10 +62,9 @@ a{
     font-size: 15px;
     font-weight: 500;
 }
-.nav-item a:hover{
+.nav-item:hover a{
     color:#081C15;
-    background: #A1B5AE;
-    padding:0 20px;
+    font-size: 20px;
     border-radius: 4px;
 }
 .hamburger{
@@ -103,7 +103,7 @@ font-family: 'Playfair Display', serif;*/
 }
 .presentation p{
     margin-block-end: 1em;
-    color: #A1B5AE;
+    color: #F2F0EB;
 }
 .one, .two{
     text-transform: capitalize;
@@ -123,7 +123,7 @@ font-family: 'Playfair Display', serif;*/
 
 .socials a i{
     font-size: 1.5rem;
-    color: #A1B5AE;
+    color: #F2F0EB;
 }
 .socials a:hover i{
     font-size: 2rem;
@@ -137,7 +137,7 @@ font-family: 'Playfair Display', serif;*/
     padding: 2rem 0;
 }
 .section-heading{
-    color: #A1B5AE;
+    color: #081C15;
     font-size: 4rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -160,7 +160,7 @@ font-family: 'Playfair Display', serif;*/
 .item .right{
     flex: 1;
     margin-left: -150px;
-    background-color: #A1B5AE;
+    background-color: #081C15;
     padding: 5rem 2rem;
     border-radius: 12px;
     box-shadow: 0 0 20px #00000028;
@@ -176,7 +176,7 @@ font-family: 'Playfair Display', serif;*/
     height: 500px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 0px 20px #A1B5AE;
+    box-shadow: 0px 0px 20px #081C15;
     position: relative;
 }
 .item .left .img::after{
@@ -186,7 +186,7 @@ font-family: 'Playfair Display', serif;*/
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: #A1B5AE;
+    background-color: #081C15;
 }
 .item .left .img img{
     object-fit: cover;
@@ -197,24 +197,51 @@ font-family: 'Playfair Display', serif;*/
     z-index: 1;
 }
 .item .right .project-title{
+    color: #F2F0EB;
     font-size: 2.5rem;
     font-family: 'Narnoor', sans-serif;
     margin-bottom: 1rem;
 }
 .item .right .project-desc{
-    color:#081C15;
+    color: #F2F0EB;
     margin-bottom: 3rem;
 }
 .item .right .buttons a{
-    color: #000;
+    color: #F2F0EB;
     padding:0 5px;
 }
 .item .right .buttons a:hover i{
     color: #fff;
 }
 
-
-
+/**about me css*/
+#about{
+    position: relative;
+    padding: 2rem 0;
+}
+.about p{
+    color: #081C15;
+    text-transform: uppercase;
+    font-family: 'Narnoor', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding:0 4rem;
+    line-height: 2;
+}
+.work{
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.work a{
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 20px;
+    background:#081C15 ;
+    color: #F2F0EB;
+    border-radius: 6px;
+}
 
 
 /*navbar responsive*/
