@@ -228,14 +228,13 @@ font-family: 'Playfair Display', serif;*/
     padding: 2rem 0;
 }
 .about p{
+    text-align: left;
     color: var(--clr-snow);
     font-family: 'Narnoor', sans-serif;
-    float: right;
-    padding:10px;
-    margin-left: 35%;
+    padding:10px 14%;
     display: flex;
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 .work{
     padding: 30px;
@@ -244,12 +243,12 @@ font-family: 'Playfair Display', serif;*/
     margin-bottom: 10px;
 }
 .work a{
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px;
     margin-left: 20px;
-    background:#081C15 ;
-    color: #F2F0EB;
-    border-radius: 6px;
+    background: var(--clr-snow) ;
+    color: var(--clr-main);
+    border-bottom: 2px solid var(--clt-txt);
 }
 
 
