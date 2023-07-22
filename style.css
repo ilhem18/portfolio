@@ -257,34 +257,23 @@ font-family: 'Playfair Display', serif;*/
     color: var(--clr-snow);
 }
 .contact{
-    margin: 0 15rem;
+    margin: 2.8rem 15rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact-wrapper{
-    height: 500px;
     min-width: 700px;
-    background: var(--clr-bg);
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.contact-info{
-    background: var(--clt-txt);
+    background: var(--clr-snow);
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    text-align: center;
 }
-.contact-info p, .contact-info h2{
-    margin-top: 30px;
+.contact-info{
+    text-align: center;
+    padding:0 20px;
+    line-height: 2;
     font-size: 1.3rem;
-}
-
-.under-title{
-    text-align: center;
-    margin-bottom: 10px;
 }
 .contact-form{
     text-align: center;
@@ -303,6 +292,7 @@ font-family: 'Playfair Display', serif;*/
     height: 38px;
     border: none;
     border-bottom: 2px solid #081C15;
+    background-color: var(--clr-snow);
     font-size: 18px;
 }
 .inputSub input{
