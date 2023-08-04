@@ -143,85 +143,103 @@ font-family: 'Playfair Display', serif;*/
 /*project's page css*/
 #projects{
     position: relative;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
 }
-.section-heading{
-    color: var(--clr-snow);
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+.project-heading{
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+}
+.project-heading h3{
+    font-size: 2rem;
+    font-weight: 600;
     text-transform: uppercase;
+    color: var(--clr-snow);
 }
-.item{
+.portfolio-content{
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 2rem;
+    color: var(--clr-snow);
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 100%;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--clr-main));
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    transition: height 0.3s;
+}
+.layer h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.layer p{
+    color: var(--clr-bg);
+    font-size: 18px;
+}
+.layer i{
+    color: var(--clr-main);
+    margin-top: 10px;
+    font-size: 20px;
+    background: var(--clr-snow);
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 10rem;
+    border-radius: 50%;
 }
-.item:nth-child(even){
-    flex-direction: row-reverse;
-}
-.item .left{
-    flex: 1;
-}
-.item .right{
-    flex: 1;
-    margin-left: -150px;
-    background-color: var(--clr-darkgrey);
-    padding: 5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px #00000028;
-    z-index: 2;
-}
-.item:nth-child(even) .right{
-    margin-left: 0;
-}
-.item:nth-child(even) .left{
-    margin-left: -150px;
-}
-.item .left .img{
-    height: 500px;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px #081C15;
-    position: relative;
-}
-.item .left .img::after{
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #081C15;
-}
-.item .left .img img{
-    object-fit: cover;
-    transition: .3 ease transform;
-}
-.item:hover .left .img img{
+.row:hover img{
     transform: scale(1.1);
-    z-index: 1;
+
 }
-.item .right .project-title{
-    color: var(--clr-main);
-    font-size: 2.5rem;
-    font-family: 'Narnoor', sans-serif;
-    margin-bottom: 1rem;
+.row:hover .layer{
+    height: 100%;
 }
-.item .right .project-desc{
-    color: var(--clr-main);
-    margin-bottom: 3rem;
+span{
+    color: var(--clr-bg);
+    font-size: 20px;
+    font-weight: 700;
 }
-.item .right .buttons a{
-    color: var(--clr-main);
-    padding:0 5px;
-}
-.item .right .buttons a:hover i{
-    color: #fff;
-}
+
+
+
+
+
+
+
+
+
 
 /**about me css*/
 #about{
